@@ -5,7 +5,7 @@ FROM openjdk:17
 WORKDIR /app
 
 # Копирование JAR-файла приложения в контейнер
-COPY build/libs/student-registration-0.0.1-SNAPSHOT.jar app.jar
+COPY target/student-regisration-1.0-SNAPSHOT-jar-with-dependencies.jar app.jar
 
 # Команда для запуска приложения
 CMD ["java", "-jar", "app.jar"]
